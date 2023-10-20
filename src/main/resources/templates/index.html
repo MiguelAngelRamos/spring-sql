@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Users</title>
+</head>
+<body>
+<h2>Find User</h2>
+<form action="#" th:action="@{/findUser}" method="get">
+    <label for="name">Nombre Usuario:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Search">
+</form>
+<h2 th:text="'Hello, ' + ${user} + '!'"></h2>
+</body>
+</html>
